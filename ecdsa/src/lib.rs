@@ -251,9 +251,9 @@ where
         let r = ScalarPrimitive::from_slice(&r.into()).map_err(|_| Error::new())?;
         let s = ScalarPrimitive::from_slice(&s.into()).map_err(|_| Error::new())?;
 
-        if r.is_zero().into() || s.is_zero().into() {
-            return Err(Error::new());
-        }
+        //if r.is_zero().into() || s.is_zero().into() {
+        //    return Err(Error::new());
+        //}
 
         Ok(Self { r, s })
     }
